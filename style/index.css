@@ -89,6 +89,7 @@ section{
 
 header {
     background-color: lightgray;
+    padding-bottom: 1%;
 }
 header h1 {
     padding: 2%;
@@ -99,12 +100,20 @@ header nav  {
     margin-bottom: 2%;
     display: flex;
 }
+.active {
+    color: firebrick;
+    background-color: wheat;
+}
 button {
     color: wheat;
     background-color:firebrick;
     border: none;
     cursor: pointer;
     padding: 10px 24px;
+}
+button:hover {
+    color: firebrick;
+    background-color: wheat;
 }
 
 /*middle styles */
@@ -182,4 +191,8 @@ footer {
     text-align: center;
     background-color: lightgray;
     padding: 4%;
+}
+.link {
+    font-weight: bold;
+    color: firebrick;
 }
