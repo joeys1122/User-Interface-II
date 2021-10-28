@@ -1,1 +1,198 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing:border-box;
+    max-width:100%; /*you can never be bigger than your parent - this is going to stop that dreaded horizontal scroll bar*/
+}
+
+/*general styles*/
+
+html{
+    font-size:62.5%; /* 1 rem = 10px */
+}
+body{
+    line-height:1.5;
+    font-size:1.8rem;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+h1, h2, h3{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h1{
+    font-size:5rem;
+}
+h2{
+    font-size:4rem;
+}
+h3{
+    font-size:2.5rem;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+section{
+    padding: 4% 0;
+}
+
+/*header styles*/
+
+header {
+    background-color: lightgray;
+    padding-bottom: 1%;
+}
+header h1 {
+    padding: 2%;
+    margin-left: 2%;
+}
+header nav  {
+    margin-left: 6%;
+    margin-bottom: 2%;
+    display: flex;
+}
+.active {
+    color: firebrick;
+    background-color: wheat;
+}
+button {
+    color: wheat;
+    background-color:firebrick;
+    border: none;
+    cursor: pointer;
+    padding: 10px 24px;
+}
+button:hover {
+    color: firebrick;
+    background-color: wheat;
+}
+
+/*middle styles */
+
+.top {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.top .container {
+    display: flex;
+    text-align: left;
+}
+.container .img {
+    margin-left: 2%;
+    margin-right: 5%;
+}
+.text h2 {
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+.text a {
+    margin-left: 10%;
+}
+.text p {
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 50%;
+}
+.middle {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+}
+.bg {
+    width: 21%;
+    height: 40vh;
+    background-image: url('https://picsum.photos/400');
+    background-repeat: no-repeat;
+    margin-right: 4%;
+    margin-bottom: 2%;
+}
+.proj {
+    width: 21%;
+    margin-right: 4%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+}
+.bg2 {
+    width: 21%;
+    height: 40vh;
+    background-image: url('https://picsum.photos/400');
+    background-repeat: no-repeat;
+    margin-right: 4%;
+    margin-bottom: 2%;
+}
+.proj2 {
+    width: 21%;
+    margin-right: 4%;
+    text-align: center;
+}
+
+/*footer styles*/
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    padding: 4%;
+}
+.link {
+    font-weight: bold;
+    color: firebrick;
+}
