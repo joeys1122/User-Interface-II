@@ -99,10 +99,10 @@ header nav  {
     margin-left: 6%;
     margin-bottom: 2%;
     display: flex;
+    width: 200px;
 }
-.active {
-    color: firebrick;
-    background-color: wheat;
+header nav a {
+    width: 120px;
 }
 button {
     color: wheat;
@@ -110,6 +110,7 @@ button {
     border: none;
     cursor: pointer;
     padding: 10px 24px;
+    width: 120px;
 }
 button:hover {
     color: firebrick;
@@ -200,7 +201,35 @@ footer {
 /* media queries */
 
 @media (max-width: 800px) {
-
+    .container {
+        flex-wrap: wrap;
+    }
+    .text {
+        text-align: center;
+        margin: 0;
+    }
+    .text p {
+        width: auto;
+        margin-right: 10%;
+    }
+    .text a {
+        margin: 0;
+    }
+    .text h2 {
+        margin-left: 0;
+    }
+    header {
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+    }
+    header nav {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 500px) {
