@@ -196,3 +196,13 @@ footer {
     font-weight: bold;
     color: firebrick;
 }
+
+/* media queries */
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
