@@ -99,10 +99,10 @@ header nav  {
     margin-left: 6%;
     margin-bottom: 2%;
     display: flex;
+    width: 200px;
 }
-.active {
-    color: firebrick;
-    background-color: wheat;
+header nav a {
+    width: 120px;
 }
 button {
     color: wheat;
@@ -110,6 +110,7 @@ button {
     border: none;
     cursor: pointer;
     padding: 10px 24px;
+    width: 120px;
 }
 button:hover {
     color: firebrick;
@@ -144,46 +145,19 @@ button:hover {
     width: 50%;
 }
 .middle {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .row1 {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 2%;
+    justify-content: space-between;
 }
-.bg {
-    width: 21%;
-    height: 40vh;
-    background-image: url('https://picsum.photos/400');
-    background-repeat: no-repeat;
-    margin-right: 4%;
-    margin-bottom: 2%;
+.box {
+    margin-bottom: 60px;
 }
-.proj {
-    width: 21%;
-    margin-right: 4%;
+.box h3 {
     text-align: center;
-    margin-bottom: 2%;
-}
-.row2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 2%;
-}
-.bg2 {
-    width: 21%;
-    height: 40vh;
-    background-image: url('https://picsum.photos/400');
-    background-repeat: no-repeat;
-    margin-right: 4%;
-    margin-bottom: 2%;
-}
-.proj2 {
-    width: 21%;
-    margin-right: 4%;
-    text-align: center;
-}
+}   
 
 /*footer styles*/
 
@@ -195,4 +169,56 @@ footer {
 .link {
     font-weight: bold;
     color: firebrick;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .container .img {
+        margin: 0;
+    }
+    .text {
+        text-align: center;
+        margin: 0;
+    }
+    .text p {
+        width: auto;
+        margin-right: 10%;
+    }
+    .text a {
+        margin: 0;
+    }
+    .text h2 {
+        margin-left: 0;
+    }
+    header {
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+    }
+    header nav {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .row1 {
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+    }
+    .box {
+        width: 45%;
+    }
 }
